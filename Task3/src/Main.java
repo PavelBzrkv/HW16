@@ -4,7 +4,11 @@ public class Main {
     private static final String VALID_REGEX ="((([А-я]+)|([А-я-]+))\\s){2}(([А-я]+)|([А-я-]+))";
 
     public static void main(String[] args){
+        changeFio();
 
+
+    }
+    private static void changeFio(){
         System.out.println("Введите ФИО");
         String fio = new Scanner(System.in).nextLine().trim();
 
@@ -18,14 +22,6 @@ public class Main {
         else {
             System.out.println("Введеная сторока не ФИО");
         }
-
-
-
-
-
-
-
-
     }
 }
 

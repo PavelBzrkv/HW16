@@ -33,7 +33,7 @@ public class Main {
     private static final String VALID = "абвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕËЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ -";
 
     public static void main(String[] args) {
-        //todo код писать тут. По желанию(рекомендуется) вынести код в методы.
+        //todo код писать тут. По желанию(рекомендуется) вынести код в методы
         System.out.println("Введите ФИО");
         String name = new Scanner(System.in).nextLine().trim();
 

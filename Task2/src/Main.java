@@ -6,7 +6,6 @@ public class Main {
                 " They are our friends, companions, family members 344." +
                 " I have an adorable calico cat as a pet, her name is Minnie." +
                 " She is two years old, we adopted her when she was just a tiny kitten.\n" +
-                "\n" +
                 "Calico is not a breed, it is a color pattern." +
                 " A calico cat is usually white with black and orange patches on the coat." +
                 " Minnie is very curious and likes to walk outdoors." +
@@ -19,9 +18,9 @@ public class Main {
     // метод
     private static void textOneHundredWords(String text){
         //String[] str = text.split("[\\s,.:-]+[0-9]+");
-        String[] str = text.split("[\\s|\\d|\\-|,|;|:|\\.]+");
-        for (int i =0; i < str.length; i++){
-        System.out.println(str[i]);
+        String[] str = text.split("[\\s|\\d\\-,;:.]+");
+        for (String s : str) {
+            System.out.println(s);
         }
     }
 

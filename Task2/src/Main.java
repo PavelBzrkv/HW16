@@ -17,11 +17,8 @@ public class Main {
     }
     // метод
     private static void textOneHundredWords(String text){
-        //String[] str = text.split("[\\s,.:-]+[0-9]+");
-        String[] str = text.split("[\\s|\\d\\-,;:.]+");
-        for (String s : str) {
-            System.out.println(s);
+        String f = text.replaceAll("[;:.,+-]|\\d+", "");
+        System.out.println(f.replaceAll( "\\s+", "\n"));
         }
     }
 
-}
